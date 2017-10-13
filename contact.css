@@ -1,0 +1,432 @@
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+@media only screen
+and (min-width : 769px) {
+
+    * {  box-sizing: border-box;  }
+    html, body, header, section, article, nav, ul, li, figure {
+        margin:0;
+        padding:0;
+        font-family: 'Montserrat', sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6, p{
+        margin:0;
+        padding:0;
+        border:0;
+    }
+
+    body > header {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+        background:#3b5998;
+        width:100%;
+        padding:10px 10px;
+        border:0;
+    }
+    body > header > section:first-of-type {
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex:2 1;
+        border:0;
+
+    }
+    body > header > section:first-of-type > h1 {
+        margin:5px 5px 5px 30px;
+        font-size: 35px;
+        font-weight:600;
+        color:white;
+        text-transform: uppercase;
+    }
+    body > header > nav {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        flex:2 1;
+        border:0;
+        margin-right:3em;
+    }
+    body > header > nav > ul {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+        list-style:none;
+        flex:1;
+        border:0;
+    }
+    body > header > nav > ul > li {
+        border:0;
+    }
+    body > header > nav > ul > li:last-of-type {
+        font-size:1.7em;
+    }
+    body > header > nav > ul > li > a {
+        text-decoration: none;
+        color:white;
+        font-weight:500;
+        font-size:1.2em;
+    }
+    body > header > nav > ul > li > a:hover {
+        text-decoration: underline;
+    }
+    body > header > section:last-of-type {
+        display:flex;
+        flex-direction: row;
+        align-items: flex-start;
+        flex:2 1;
+        border:0;
+        margin-right:3em;
+
+    }
+    body > header > section:last-of-type > article {
+        display:flex;
+        flex-direction: row;
+        align-items: flex-start;
+        flex:1;
+        border:0;
+        background:#f7f7f7;
+        padding:1rem;
+    }
+    body > header > section:last-of-type > article > section {
+        border:0;
+        background:#f7f7f7;
+        margin-left:auto
+    }
+
+    label,input::after{
+        display: block;
+    }
+
+    main{
+        float: left;
+        width: 50%;
+    }
+
+    main > section > header > h1{
+        margin: 24px 0;
+    }
+
+    aside >section >header> h1{
+        margin: 24px 0;
+
+    }
+
+    aside{
+        float: right;
+        width: 50%;
+    }
+
+    main, aside{
+        display: flex;
+        justify-content: center;
+    }
+
+    .zelda{
+        display: inline-block;
+    }
+
+    input[type=text]{
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+
+    input[type=email]{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+
+    textarea[name=comments]{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        resize: none;
+    }
+
+    input[type=submit]{
+        width: 40%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        color: white;
+        background-color: #1586DC;
+        margin-bottom: 45px;
+        border: none;
+    }
+
+    input[type=submit]:hover{
+        background-color: #0A7CD2;
+        cursor: pointer;
+    }
+
+    input[type=text]:focus{
+        background-color: lightblue;
+    }
+
+    textarea[name=comments]:focus{
+        background-color: lightblue;
+    }
+
+    input[type=email]:focus{
+        background-color: lightblue;
+    }
+
+
+
+
+
+
+    footer {
+        display:flex;
+        width:100%;
+        justify-content: center;
+        align-items: center;
+        background:#3b5998;
+        color:white;
+        padding: 15px 30px;
+    }
+    footer > section {
+        flex:1;
+    }
+    footer > section:first-of-type {
+        flex: 4 1;
+        font-size:.9em;
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left:4em;
+    }
+    footer > section:first-of-type > header > h2 {
+        font-size:1.5em;
+        color:white;
+    }
+    footer > section:last-of-type {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        flex:1;
+        border:0;
+        font-size:2em;
+    }
+    footer > section:last-of-type > ul {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style:none;
+        flex:1;
+        border:0;
+    }
+    footer > section:last-of-type > ul > li {
+        border:0;
+    }
+
+}
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 768px) {
+
+    body{
+        margin:0;
+        font-family: 'Montserrat', sans-serif;
+    }
+    body > header > section:first-child {
+        padding:20px;
+        background-color: #3b5998;
+        text-align: center;
+        font-size: 1.5em;
+        text-transform: uppercase;
+    }
+
+    body > header > section:first-child > h1 {
+        margin: 0;
+        color:white;
+    }
+
+    nav {
+        background-color: #3b5998;
+        width: 100%;
+        margin: 0;
+        padding:0;
+        color:white;
+    }
+    nav > ul {
+        margin: 0;
+        display: block;
+        padding: 0;
+        text-align: center;
+    }
+
+    nav > ul > li {
+        list-style-type: none;
+        padding: 10px;
+    }
+
+
+    nav > ul > li a {
+        text-decoration: none;
+        color:white;
+        font-size: 1.5em;
+    }
+
+    header > section:last-of-type > article {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #3b5998;
+        padding: 10px;
+    }
+
+    header > section:last-of-type > article > p {
+        margin:0;
+        background-color: white;
+        flex:1;
+        padding: 10px;
+    }
+
+    header > section:last-of-type > article > section  {
+        background-color: white;
+        padding:10px;
+    }
+
+
+
+    footer {
+        display: flex;
+        background-color: #3b5998;
+        color:white;
+        padding: 10px;
+    }
+    footer > section:first-child {
+        margin-left: 30px;
+        flex:2;
+    }
+
+    footer > section:first-child > p {
+        margin: 5px;
+    }
+
+    footer > section:last-of-type {
+        display: flex;
+        align-items: center;
+    }
+
+    footer > section:last-of-type > ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 2em;
+        padding:0;
+    }
+
+    footer > section:last-of-type > ul > li {
+        list-style-type: none;
+        margin: 7px;
+    }
+
+
+    main {
+        width: 100%;
+    }
+    aside{
+        width:100%;
+        margin: 50px 0;
+
+
+
+    }
+
+    aside > section{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-left: 8%;
+
+    }
+
+    label,input::after{
+        display: block;
+    }
+
+
+
+    main > section > header > h1{
+        margin: 24px 0;
+    }
+
+    aside >section >header> h1{
+        margin: 24px 0;
+
+    }
+
+
+
+    main, aside{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .zelda{
+        display: inline-block;
+    }
+
+    input[type=text]{
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+
+    input[type=email]{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+
+    textarea[name=comments]{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        resize: none;
+    }
+
+    input[type=submit]{
+        width: 40%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        color: white;
+        background-color: #1586DC;
+        margin-bottom: 45px;
+        border: none;
+    }
+
+    input[type=submit]:hover{
+        background-color: #0A7CD2;
+        cursor: pointer;
+    }
+
+    input[type=text]:focus{
+        background-color: lightblue;
+    }
+
+    textarea[name=comments]:focus{
+        background-color: lightblue;
+    }
+
+    input[type=email]:focus{
+        background-color: lightblue;
+    }
+}
+
